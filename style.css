@@ -1,0 +1,185 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #2c2c2c;
+    background-color: #fafafa;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* Header */
+h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #111;
+    margin-bottom: 0.25rem;
+}
+
+.email {
+    color: #888;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.links a {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.links a:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+/* Bio section */
+.bio-section {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.bio {
+    flex: 1;
+}
+
+.bio p {
+    margin-bottom: 1rem;
+}
+
+.bio a {
+    color: #2c2c2c;
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s;
+}
+
+.bio a:hover {
+    text-decoration-color: #2c2c2c;
+}
+
+.headshot {
+    flex-shrink: 0;
+    width: 200px;
+}
+
+.headshot img {
+    width: 100%;
+    border-radius: 6px;
+    filter: grayscale(5%);
+}
+
+/* Sections */
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 2rem 0;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.research-list {
+    list-style: none;
+    padding: 0;
+}
+
+.research-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 0;
+}
+
+.research-list li strong {
+    font-weight: 600;
+}
+
+.research-list a {
+    color: #2c2c2c;
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s;
+}
+
+.research-list a:hover {
+    text-decoration-color: #2c2c2c;
+}
+
+/* Footer */
+footer {
+    margin-top: 1rem;
+}
+
+.footer-links {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.footer-links a {
+    color: #777;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #111;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .container {
+        padding: 2.5rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .bio-section {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    .headshot {
+        width: 160px;
+    }
+
+    .links {
+        gap: 1rem;
+    }
+}
